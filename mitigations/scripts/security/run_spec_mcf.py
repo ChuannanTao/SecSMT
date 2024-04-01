@@ -29,7 +29,7 @@ for scheme in ["all_shared", "all_partitioned", "all_adaptive", "all_asymmetric_
           # 602.gcc_s
           # gem5_cmd = gem5_base_cmd + f"-c 'sgcc_base.mytest-m64 gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_-fipa-pta.s;sgcc_base.mytest-m64 gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_-fipa-pta.s' "
           # 605.mcf_s
-              # gem5_cmd = gem5_base_cmd + f"-c 'sgcc_base.mytest-64 gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_fipa-pta.s;sgcc_base.mytest-64 gcc-pp.c -O5 -fipa-pta -o gcc-pp.opts-O5_fipa-pta.s' "
+          gem5_cmd = gem5_base_cmd + f"-c 'mcf_s_base.mytest-m64 inp.in;mcf_s_base.mytest-m64 inp.in' "
           # 620.omnetpp_S *
           # gem5_cmd = gem5_base_cmd + f"-c 'omnetpp_s_base.mytest-m64 -c General -r 0;omnetpp_s_base.mytest-m64 -c General -r 0' "
           # 623.xalancbmk_s
@@ -43,7 +43,7 @@ for scheme in ["all_shared", "all_partitioned", "all_adaptive", "all_asymmetric_
           # 648.exchange2_s *
           # gem5_cmd = gem5_base_cmd + f"-c 'exchange2_s_base.mytest-m64 6;exchange2_s_base.mytest-m64 6' "
           # 657.xz_s
-          gem5_cmd =gem5_base_cmd + f"-c 'xz_s_base.mytest-m64 cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4;xz_s_base.mytest-m64 cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4' "
+          # gem5_cmd =gem5_base_cmd + f"-c 'xz_s_base.mytest-m64 cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4;xz_s_base.mytest-m64 cpu2006docs.tar.xz 6643 055ce243071129412e9dd0b3b69a21654033a9b723d874b2015c774fac1553d9713be561ca86f74e4f16f22e664fc17a79f30caa5ad2c04fbc447549c2810fae 1036078272 1111795472 4' "
           gem5_cmd += "-o 'thread0;thread1' "
           partitioning_args = (row["gem5_args"] for row in config.jobs if row["name"]==scheme)
           gem5_cmd += next(partitioning_args)
