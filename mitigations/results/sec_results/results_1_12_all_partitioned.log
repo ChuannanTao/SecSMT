@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "build/X86/python/m5/main.py", line 433, in main
+  File "/root/SecSMT_Artifact/mitigations/gem5/configs/example/se.py", line 103
+    if len(words) > 1:
+                     ^
+SyntaxError: invalid syntax

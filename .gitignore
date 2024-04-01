@@ -1,9 +1,0 @@
-mitigations/workloads/spec2017
-mitigations/results
-mitigations/logs/
-*.cmd
-*.symvers
-*.order
-*.dwo
-*.ko
-*.mod

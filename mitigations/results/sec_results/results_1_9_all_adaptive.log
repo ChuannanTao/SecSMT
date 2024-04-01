@@ -1,0 +1,9 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version [DEVELOP-FOR-V20.1]
+gem5 compiled Mar 21 2024 22:07:27
+gem5 started Mar 26 2024 21:11:15
+gem5 executing on sue-virtual-machine, pid 2218
+command line: /root/SecSMT_Artifact/mitigations/gem5/build/X86/gem5.fast --outdir=/root/SecSMT_Artifact/mitigations/results/sec_results/m5out/out_1_9_all_adaptive --stats-file=stats.txt /root/SecSMT_Artifact/mitigations/gem5/configs/example/se.py -I 100000000 --smt --caches --l2cache --l1d_size=32kB --l1d_assoc=8 --l1i_size=32kB --l1i_assoc=8 --cpu-type=Skylake_3 --maxinsts_threadID=0 --mem-type=DDR4_2400_16x4 --mem-size=64GB --mem-channels=2 -c '/root/SecSMT_Artifact/mitigations/workloads/security/receiver_1;/root/SecSMT_Artifact/mitigations/workloads/security/sender_9' -o 'thread0;thread1' --smtROBPolicy=AdaptiveSMTPolicy --smtIQPolicy=AdaptiveSMTPolicy --smtTLBPolicy=AdaptiveSMTPolicy --smtPhysRegPolicy=AdaptiveSMTPolicy --smtSQPolicy=AdaptiveSMTPolicy --smtLQPolicy=AdaptiveSMTPolicy --smtIssuePolicy=Adaptive --smtAdaptiveInterval=100000000 --smtFetchPolicy=Adaptive --smtBTBPolicy=AdaptiveSMTPolicy --smtCachePolicy=AdaptiveSMTPolicy --smtCommitPolicy=Adaptive
+
